@@ -14,6 +14,7 @@ class Validation
 	 */
 	public $ruleSets = [
 		\CodeIgniter\Validation\Rules::class,
+		\App\Models\MisReglas\Reglas::class,
 		\CodeIgniter\Validation\FormatRules::class,
 		\CodeIgniter\Validation\FileRules::class,
 		\CodeIgniter\Validation\CreditCardRules::class,
