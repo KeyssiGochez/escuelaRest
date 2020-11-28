@@ -90,7 +90,7 @@ class Estudiantes extends ResourceController
 			endif;
 
 		} catch (\Exception $e) {
-			//throw $th;
+			
 			return $this->failServerError('Ha ocurrido un error en el servidor');
 		}
 	}
