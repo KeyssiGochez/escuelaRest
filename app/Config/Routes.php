@@ -58,7 +58,10 @@ $routes->group('api',['namespace'=>'App\Controllers\API'],function($routes){
 	$routes->delete('estudiantes/delete(:num)', 'Estudiantes::delete/$1');
 });
 
-
+//api
+$routes->group('api',['namespace'=>'App\Controllers\API'],function($routes){
+	$routes->get('get/all(:num)', 'Get::all/$1');
+});
 /**
  * --------------------------------------------------------------------
  * Additional Routing
